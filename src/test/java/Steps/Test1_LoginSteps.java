@@ -84,4 +84,31 @@ public class Test1_LoginSteps extends BaseUtil {
         WebElement TestUsername = base.Driver.findElement(By.id("password"));
         TestUsername.sendKeys("tom");
     }
+
+    @Then("I should see that User IS NOT logged in with a message ‘Provide valid combination of username and password‘")
+    public void iShouldSeeThatUserISNOTLoggedInWithMessageProvideValidCombinationOfUsernameAndPassword() {
+        System.out.println("I should see that User IS NOT logged in with a message ‘Provide valid combination of username and password‘");
+
+        //Initializing the 'wait' with X seconds delay before it throws a NoSuchElementException
+        WebDriverWait wait = new WebDriverWait(base.Driver,5);
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.id("flash")));
+        System.out.println("Flash = " + base.Driver.findElement(By.className("flash")).getText());
+
+        String expectedMessage = "Provide valid combination of username and password";
+        String actualMessage = base.Driver.findElement(By.className("flash")).getText();
+
+        //System.out.println("expectedMessage = " + expectedMessage);
+        //System.out.println("actualMessage = " + actualMessage);
+        if (actualMessage.contains(expectedMessage)) {
+            System.out.println("Test Passed");
+        }
+        else {
+            System.out.println("Test Failed");
+
+        }
+
+        //Assert.assertEquals("It's not displayed", base.Driver.findElement(By.className("flash")).isDisplayed(), true);
+        Assert.assertTrue(actualMessage.contains(expectedMessage));
+        System.out.println("After assert");
+    }
 }
