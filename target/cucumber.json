@@ -1,0 +1,294 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2021-02-08T07:10:20.753Z",
+        "before": [
+          {
+            "result": {
+              "duration": 12983589900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Steps.Hook.InitializeTest()"
+            }
+          }
+        ],
+        "line": 5,
+        "name": "Valid login/valid password",
+        "description": "",
+        "id": "loginsuccesserrorfeature;valid-login/valid-password",
+        "after": [
+          {
+            "result": {
+              "duration": 70458212900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Steps.Hook.TearDownTest(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3434500700,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I navigate to the login test page",
+            "match": {
+              "location": "Steps.Test1_LoginSteps.iNavigateToTheLoginTestPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 49996800,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I type Correct Username in Username field",
+            "match": {
+              "location": "Steps.Test1_LoginSteps.iTypeCorrectUsernameInUsernameField()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 30997500,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I type Correct Password in Password field",
+            "match": {
+              "location": "Steps.Test1_LoginSteps.iTypeCorrectPasswordInPasswordField()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 435002100,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I click the Login button",
+            "match": {
+              "location": "Steps.Test1_LoginSteps.iClickTheLoginButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 99995700,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I should see that User logged in with message ‘You logged into a secure area!’",
+            "match": {
+              "location": "Steps.Test1_LoginSteps.iShouldSeeThatUserLoggedInWithMessageYouLoggedIntoASecureArea()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-02-08T07:11:48.362Z",
+        "before": [
+          {
+            "result": {
+              "duration": 7436190300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Steps.Hook.InitializeTest()"
+            }
+          }
+        ],
+        "line": 12,
+        "name": "Valid login/invalid password",
+        "description": "",
+        "id": "loginsuccesserrorfeature;valid-login/invalid-password",
+        "after": [
+          {
+            "result": {
+              "duration": 66944457100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Steps.Hook.TearDownTest(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2023682200,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I navigate to the login test page",
+            "match": {
+              "location": "Steps.Test1_LoginSteps.iNavigateToTheLoginTestPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 58999600,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I type Correct Username in Username field",
+            "match": {
+              "location": "Steps.Test1_LoginSteps.iTypeCorrectUsernameInUsernameField()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 162985100,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I type Incorrect Password in Password field",
+            "match": {
+              "location": "Steps.Test1_LoginSteps.iTypeIncorrectPasswordInPasswordField()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 429999500,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I click the Login button",
+            "match": {
+              "location": "Steps.Test1_LoginSteps.iClickTheLoginButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:87)\r\n\tat org.junit.Assert.assertTrue(Assert.java:42)\r\n\tat org.junit.Assert.assertTrue(Assert.java:53)\r\n\tat Steps.Test1_LoginSteps.iShouldSeeThatUserISNOTLoggedInWithMessageProvideValidCombinationOfUsernameAndPassword(Test1_LoginSteps.java:111)\r\n\tat ✽.I should see that User IS NOT logged in with a message ‘Provide valid combination of username and password‘(file:///C:/Users/Пользователь/IdeaProjects/CucumberQATest0221/src/test/java/Features/Test1_Login.feature:17)\r\n",
+              "duration": 66996300,
+              "status": "failed"
+            },
+            "line": 17,
+            "name": "I should see that User IS NOT logged in with a message ‘Provide valid combination of username and password‘",
+            "match": {
+              "location": "Steps.Test1_LoginSteps.iShouldSeeThatUserISNOTLoggedInWithMessageProvideValidCombinationOfUsernameAndPassword()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-02-08T07:13:05.502Z",
+        "before": [
+          {
+            "result": {
+              "duration": 8442029700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Steps.Hook.InitializeTest()"
+            }
+          }
+        ],
+        "line": 19,
+        "name": "Invalid login/valid password",
+        "description": "",
+        "id": "loginsuccesserrorfeature;invalid-login/valid-password",
+        "after": [
+          {
+            "result": {
+              "duration": 1848449200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Steps.Hook.TearDownTest(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2204638000,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "I navigate to the login test page",
+            "match": {
+              "location": "Steps.Test1_LoginSteps.iNavigateToTheLoginTestPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 38007800,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "I type Incorrect Username in Username field",
+            "match": {
+              "location": "Steps.Test1_LoginSteps.iTypeIncorrectUsernameInUsernameField()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 27000800,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "I type Incorrect Password in Password field",
+            "match": {
+              "location": "Steps.Test1_LoginSteps.iTypeIncorrectPasswordInPasswordField()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 544238300,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "I click the Login button",
+            "match": {
+              "location": "Steps.Test1_LoginSteps.iClickTheLoginButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:87)\r\n\tat org.junit.Assert.assertTrue(Assert.java:42)\r\n\tat org.junit.Assert.assertTrue(Assert.java:53)\r\n\tat Steps.Test1_LoginSteps.iShouldSeeThatUserISNOTLoggedInWithMessageProvideValidCombinationOfUsernameAndPassword(Test1_LoginSteps.java:111)\r\n\tat ✽.I should see that User IS NOT logged in with a message ‘Provide valid combination of username and password‘(file:///C:/Users/Пользователь/IdeaProjects/CucumberQATest0221/src/test/java/Features/Test1_Login.feature:24)\r\n",
+              "duration": 51997000,
+              "status": "failed"
+            },
+            "line": 24,
+            "name": "I should see that User IS NOT logged in with a message ‘Provide valid combination of username and password‘",
+            "match": {
+              "location": "Steps.Test1_LoginSteps.iShouldSeeThatUserISNOTLoggedInWithMessageProvideValidCombinationOfUsernameAndPassword()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "LoginSuccessErrorFeature",
+    "description": "  This feature deals with a login success and login error",
+    "id": "loginsuccesserrorfeature",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/Features/Test1_Login.feature",
+    "tags": []
+  }
+]

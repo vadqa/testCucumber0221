@@ -1,0 +1,10 @@
+Base\BaseUtil.class
+Steps\Test1_LoginSteps.class
+Steps\Test5_EnableDisableSteps.class
+Pages\Test1_LoginPage.class
+Steps\Test2_ModalSteps.class
+Steps\Test4_NewWindowSteps.class
+Steps\Test3_SortingTablesSteps.class
+Pages\Test3_SortingTables.class
+Runners\TestRunner.class
+Steps\Hook.class
